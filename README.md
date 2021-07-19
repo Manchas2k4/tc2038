@@ -1,1 +1,3 @@
-# tc2038
+![Tec de Monterrey](images/logotecmty.png)
+# Analysis and Design of Advanced Algorithms (TC2038)
+This is an intermediate level course in computing, which enables students to learn techniques for designing and analyzing algorithms. Previous knowledge is required in discrete mathematics, high-level programming language and data structure. The learning outcome for this course is that the students analyze and compare algorithms, employ algorithm design techniques to create algorithms that efficiently solve specific problems and understand the algorithm classification system and the P vs. NP problem.
