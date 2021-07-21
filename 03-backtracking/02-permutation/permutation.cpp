@@ -1,3 +1,16 @@
+// =================================================================
+//
+// File: permutation.cpp
+// Author: Pedro Perez
+// Description: This file contains the implementation of the
+//              algorithm that generates all the permutations of a
+//              number using the Backtracking technique.
+//
+// Copyright (c) 2021 by Tecnologico de Monterrey.
+// All Rights Reserved. May be reproduced for any non-commercial
+// purpose.
+// =================================================================
+
 #include <iostream>
 #include <string>
 
