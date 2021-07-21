@@ -3,10 +3,10 @@
 //
 // File: coin_change.cpp
 // Author: Pedro Perez
-// Description: The program implements the avid algorithm of activity
-//							selection. Receive console: the number of activities,
-//							followed by the start and end time of each of them.
-//							This code uses the greedy technique.
+// Description: The program implements the greedy algorithm of
+//							activity selection. Receive console: the number of
+//							activities, followed by the start and end time of
+//							each of them.
 //
 // Copyright (c) 2021 by Tecnologico de Monterrey.
 // All Rights Reserved. May be reproduced for any non-commercial
@@ -28,7 +28,7 @@ bool compare(activity left, activity right) {
 void activitySelection(std::vector<activity> &array) {
 	int i, j;
 
-	sort(array.begin(), array.end(), compare);
+	std::sort(array.begin(), array.end(), compare);
 	i = 0;
 
 	std::cout << "(" << array[i].start << ", " << array[i].end << "), ";
