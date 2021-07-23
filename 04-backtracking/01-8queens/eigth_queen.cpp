@@ -1,3 +1,16 @@
+// =================================================================
+//
+// File: eight_queen.cpp
+// Author: Pedro Perez
+// Description: This file contains the implementation of the 8
+//              queens algorithm. The algorithm uses Backtracking
+//              technique.
+//
+// Copyright (c) 2021 by Tecnologico de Monterrey.
+// All Rights Reserved. May be reproduced for any non-commercial
+// purpose.
+// =================================================================
+
 #include <iostream>
 #include <cmath>
 

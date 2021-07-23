@@ -1,3 +1,16 @@
+// =================================================================
+//
+// File: fibonacci.c
+// Author: Pedro Perez
+// Description: This file contains the implementation of the
+//							Fibonacci serie. The algorithm uses the
+//              DP technique.
+//
+// Copyright (c) 2021 by Tecnologico de Monterrey.
+// All Rights Reserved. May be reproduced for any non-commercial
+// purpose.
+// =================================================================
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -30,7 +43,7 @@ ul fib2(ui n, ul *A) {
 
 void fib3(ui n, ul *A) {
 	ui i;
-	
+
 	A[1] = A[2] = 1;
 	for (i = 3; i <= n; i++) {
 		A[i] = A[i - 1] + A[i - 2];
@@ -40,18 +53,18 @@ void fib3(ui n, ul *A) {
 int main(int argc, char* argv[]) {
 	ui n;
 	ul *A, result;
-	
+
 	scanf("%u", &n);
-	
+
 	A = (ul*) malloc((n + 1) * sizeof(ul));
 	memset(A, -1, (n + 1) * sizeof(ul));
-	
+
 	printf("fib1(%u) = %li\n", n, fib1(n));
 	printf("fib2(%u) = %li\n", n, fib2(n, A));
-	
+
 	fib3(n, A);
 	printf("fib3(%u) = %li\n", n, A[n]);
-	
+
 	free(A);
 	return 0;
 }

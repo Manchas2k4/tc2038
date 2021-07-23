@@ -1,3 +1,16 @@
+// =================================================================
+//
+// File: max_sum.c
+// Author: Pedro Perez
+// Description: This file contains the implementation of the
+//							counting the way of change problem. The algorithm
+//							uses the DP technique.
+//
+// Copyright (c) 2021 by Tecnologico de Monterrey.
+// All Rights Reserved. May be reproduced for any non-commercial
+// purpose.
+// =================================================================
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -23,7 +36,7 @@ int way_change(int *S, int size, int c) {
             x = (i-S[j] >= 0) ? table[i - S[j]][j] : 0;
 
             // Count of solutions excluding S[j]
-            y = (j >= 0) ? table[i][j - 1] : 0; 
+            y = (j >= 0) ? table[i][j - 1] : 0;
 
             // total count
             table[i][j] = x + y;
