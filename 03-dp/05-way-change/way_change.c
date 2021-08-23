@@ -32,7 +32,7 @@ int way_change(int *S, int size, int c) {
 
 	for (i = 1; i < rows; i++) {
 		for (j = 0; j < cols; j++) {
-			// Count of solutions including S[j]
+						// Count of solutions including S[j]
             x = (i-S[j] >= 0) ? table[i - S[j]][j] : 0;
 
             // Count of solutions excluding S[j]

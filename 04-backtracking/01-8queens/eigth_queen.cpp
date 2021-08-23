@@ -15,6 +15,7 @@
 #include <cmath>
 
 int caseNumber = 0;
+int N = 4;
 
 bool canPlace(int *rows, int r, int c) {
   for (int i = 0; i < c; i++) {
@@ -26,15 +27,15 @@ bool canPlace(int *rows, int r, int c) {
 }
 
 void eigthQueens(int *rows, int a, int b, int c) {
-  if (c == 8 && rows[b] == a) {
+  if (c == N && rows[b] == a) {
     std::cout << "Solution " << (++caseNumber) << ": ";
-    for (int i = 0; i < 8; i++) {
+    for (int i = 0; i < N; i++) {
       std::cout << (rows[i] + 1) << " ";
     }
     std::cout << "\n";
   }
 
-  for (int r = 0; r < 8; r++) {
+  for (int r = 0; r < N; r++) {
     if (canPlace(rows, r, c)) {
       rows[c] = r;
       eigthQueens(rows, a, b, c + 1);
@@ -44,7 +45,7 @@ void eigthQueens(int *rows, int a, int b, int c) {
 
 int main(int argc, char* argv[]) {
   int a, b;
-  int rows[8] = {0};
+  int rows[N] = {0};
 
   std::cin >> a >> b;
   eigthQueens(rows, a, b, 0);
