@@ -20,8 +20,6 @@ std::vector<int> zFunctionDP(const std::string &s) {
 
   left = right = 0;
   for (int i = 1; i < n; i++) {
-    std::cout << "i = " << i << " left = " << left << " right = " << right << "\n";
-
     if (i <= right) {
       z[i] = std::min(right - i + 1, z[i - left]);
     }

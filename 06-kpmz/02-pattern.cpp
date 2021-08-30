@@ -4,13 +4,11 @@
 
 int patternMatchingNaive(const std::string &pattern, const std::string &text) {
   int n, m;
-  //bool found;
   std::string segment;
 
   n = text.size();
   m = pattern.size();
   for (int i = 0; i < (n - m + 1); i++) {
-    //found = false;
     segment = text.substr(i, m);
     if (pattern == segment) {
       return i;
