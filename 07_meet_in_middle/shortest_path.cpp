@@ -40,8 +40,8 @@ int shortestPath(int n, string& start, string& finish) {
 }
 
 int main(int argc, char* argv[]) {
-  string p1 = "1234";
-  string p2 = "4312";
+  string p1 = "1234567890";
+  string p2 = "0987123456";
 
   cout << "Shortest path length = " << shortestPath(p1.length(), p1, p2) << "\n";
   return 0;
