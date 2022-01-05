@@ -14,8 +14,7 @@
 #include <iostream>
 #include <string>
 
-std::string common_prefix_util(const std::string &str1,
-															 const std::string &str2) {
+std::string find_prefix(const std::string &str1, const std::string &str2) {
 	std::string result;
 	int len1, len2, i, j;
 
@@ -44,7 +43,7 @@ std::string common_prefix(std::string arr[], int low, int high) {
 		std::string str1 = common_prefix(arr, low, mid);
 		std::string str2 = common_prefix(arr, mid + 1, high);
 
-		return common_prefix_util(str1, str2);
+		return find_prefix(str1, str2);
 	}
 
 	return std::string("aux");
