@@ -22,7 +22,11 @@ typedef struct act {
 } activity;
 
 bool compare(activity left, activity right) {
-	return (left.end < right.end);
+	if (left.end == right.end) {
+		return (left.start < right.start);
+	} else {
+		return (left.end < right.end);
+	}
 }
 
 void activitySelection(std::vector<activity> &array) {
