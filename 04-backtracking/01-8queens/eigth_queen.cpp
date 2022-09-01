@@ -15,7 +15,7 @@
 #include <cmath>
 
 int caseNumber = 0;
-int N = 4;
+int N = 8;
 
 bool canPlace(int *rows, int r, int c) {
   for (int i = 0; i < c; i++) {
