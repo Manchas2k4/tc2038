@@ -11,11 +11,12 @@ const int SIZE = 1005;
 
 typedef pair<double, double> Range;
 
-int solution(Range *arr, int n) {
+//int solution(Range *arr, int n) {
+int solution(vector<Range> &arr, int n) {
     double radius = MIN;
     int i, count;
 
-    sort(arr, arr + n);
+    sort(arr.begin(), arr.begin() + n);
 
     i = count = 0;
     while (i < n) {
@@ -33,7 +34,8 @@ int main(int argc, char* argv[]) {
     int n, d, cases;
     double x, y;
     bool noSolution;
-    Range arr[SIZE];
+    //Range arr[SIZE];
+    vector<Range> arr(SIZE);
 
     cases = 1;
     while(1) {
