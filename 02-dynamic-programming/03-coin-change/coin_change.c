@@ -2,9 +2,8 @@
 //
 // File: max_sum.c
 // Author: Pedro Perez
-// Description: This file contains the implementation of the
-//							coin change problem. The algorithm uses the
-//              DP technique.
+// Description: This file contains the implementation of the coin 
+//				change problem. The algorithm uses the DP technique.
 //
 // Copyright (c) 2021 by Tecnologico de Monterrey.
 // All Rights Reserved. May be reproduced for any non-commercial
